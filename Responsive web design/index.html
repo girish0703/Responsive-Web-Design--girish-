@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a7e6c9efcb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- This is a web-layout(1920 x 1080) -->
+    <div class="bg-container">
+      <div class="dashboard">
+        <div>
+          <div class="logo">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=4d922ade-2482-445c-b61c-e09c39895d29&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Logo"
+            />
+            <hr class="line" />
+          </div>
+          <div class="selected-element">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=2ce02936-bcca-4688-9d94-954da9671960&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Wallet"
+            />
+            <h1 class="selected-header">Wallet</h1>
+          </div>
+          <div class="element">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=1d2dee45-0510-4a6c-8867-f74e35ab51e8&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Wolfpacks"
+            />
+            <h1 class="header">Wolfpacks</h1>
+          </div>
+          <div class="element">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=a360d084-4cf7-46ea-ac0d-fef9b0269269&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Portfolio"
+            />
+            <h1 class="header">Portfolio</h1>
+          </div>
+          <div class="element">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=4d87d9e4-7389-46ff-b122-dd5ffba79488&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Transparency"
+            />
+            <h1 class="header">Transparency</h1>
+          </div>
+          <div class="element">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=e4a59ce2-bde2-496d-9456-4357a1c45c60&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="Properties"
+            />
+            <h1 class="header">All Properties</h1>
+          </div>
+        </div>
+        <div id="alertBox">
+          <div class="check-box">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=a12c7733-2f2c-405c-b779-da1526e1b06e&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="checkbox"
+            />
+          </div>
+          <div class="alert-box">
+            <img
+              id="closeIcon"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=74925fcd-c5cf-4615-bc9c-e4282003b3ae&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              alt="close-btn"
+              class="close-icon"
+            />
+            <p class="alert-desc mt-5">
+              Your account is not yet activated to sell Freedom Coins™. Please
+              specify your PayPal payment address to activate your account.
+            </p>
+            <button class="alert-btn">Click here</button>
+          </div>
+        </div>
+      </div>
+      <div class="page-container">
+        <div class="top-section">
+          <div class="left-section">
+            <h1 class="selected-title">Overview</h1>
+            <h1 class="title">Savings</h1>
+            <h1 class="title">Investments</h1>
+          </div>
+          <div class="right-section">
+            <div class="mr-4">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=31ab3544-5f0c-4f8f-b7c2-940f90d7207f&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+                alt="msg"
+              />
+            </div>
+            <div class="mr-4">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=4c101b99-b068-4604-aad7-ac80e1bada69&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+              />
+            </div>
+            <div class="investor-box mr-5">
+              <div class="bg-icon">
+                <img
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=be77c644-ba9a-490e-97ed-ecb4a7201675&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+                />
+              </div>
+              <p class="box-name">Investor</p>
+            </div>
+            <p class="vertical-line mr-5">|</p>
+            <div class="mr-4">
+              <img
+                class="avatar"
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/profile-avatar-img.png"
+              />
+            </div>
+            <h1 class="user mr-4">Robert Downey</h1>
+            <i id="chevronIcon" class="fas fa-chevron-down popup-icon">
+              <div class="popup-card" id="popupCard">
+                <p class="name"><i class="far fa-user mr-4"></i>Profile</p>
+                <hr class="line" />
+                <p class="name">
+                  <i class="far fa-address-card mr-4"></i>Update Account
+                </p>
+                <hr class="line" />
+                <p class="name"><i class="fas fa-power-off mr-4"></i>Log Out</p>
+              </div>
+            </i>
+          </div>
+        </div>
+        <div class="d-flex mb-4">
+          <div>
+            <hr class="selected-line" />
+          </div>
+          <div>
+            <hr class="line" width="1310px" />
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="left-content-container">
+            <div class="sections">
+              <div class="section-1">
+                <p class="balance">
+                  Total Balance
+                  <span class="info1">
+                    <img
+                      src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0829ac6e-c219-4b8b-ab8f-46690c34657d&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+                    />
+                    <span class="popup1"
+                      >Total Balance, It includes overall balance like freedom
+                      coin, property investment & wolfpack investment</span
+                    >
+                  </span>
+                  <span class="balance amount">: $60.00</span>
+                </p>
+                <div class="card">
+                  <h1 class="card-title">Checking</h1>
+                  <p class="name">
+                    Cash<span class="balance card-amount">: $20.00</span>
+                  </p>
+                  <h1 class="text-header">
+                    Buy Coins<span class="top-span">TM</span>
+                  </h1>
+                  <div class="d-flex flex-row">
+                    <div id="coinBox" class="coins-box p-3">
+                      <p id="coinNum" class="coins-num">0</p>
+                      <div class="d-flex flex-column">
+                        <i class="fas fa-angle-up angle-icon"></i>
+                        <i class="fas fa-angle-down angle-icon"></i>
+                      </div>
+                    </div>
+                    <button class="button">
+                      Buy<span class="popup3">Read FAQs</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <h1 class="card-title">Savings</h1>
+                  <p class="name">
+                    Invested<span class="balance card-amount-2">: $20.00</span>
+                  </p>
+                  <p class="name">
+                    Total Payout
+                    <span class="info2">
+                      <img
+                        src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0829ac6e-c219-4b8b-ab8f-46690c34657d&amp;api_key=CometServer1&amp;access_token=1618725502_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_42dc6978b7d4096f0cc63ffe6457666c5956af63"
+                      />
+                      <span class="popup2"
+                        >Projected total payments based on term and APR</span
+                      >
+                    </span>
+                    <span class="balance card-amount-3">: $27.00</span>
+                  </p>
+                </div>
+              </div>
+              <div class="section-2">
+                <p class="balance">
+                  Wallet Address
+                  <span id="imgPopup" class="popup-img">
+                    <img
+                      src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=3154634a-8c43-46e1-bb0d-c5a9244742f9&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                    />
+                    <span id="qrcodeCard" class="qrcode-popup"
+                      ><i class="fas fa-qrcode" style="font-size: 150px"></i
+                      ><br />qr code</span
+                    >
+                  </span>
+                </p>
+                <div class="card">
+                  <h1 class="card-title">Transfers</h1>
+                  <p class="name">
+                    Paypal<span class="balance card-amount">Bank Account</span>
+                  </p>
+                  <h1 class="text-header">
+                    Sell Coins<span class="top-span">TM</span>
+                  </h1>
+                  <div class="d-flex flex-row">
+                    <div id="coinBox2" class="coins-box p-3">
+                      <p id="coinNum2" class="coins-num">0</p>
+                      <div class="d-flex flex-column">
+                        <i class="fas fa-angle-up angle-icon"></i>
+                        <i class="fas fa-angle-down angle-icon"></i>
+                      </div>
+                    </div>
+                    <button class="button">
+                      Sell<span class="popup3">Read FAQs</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <h1 class="card-title">Investments</h1>
+                  <p class="name">
+                    Invested<span class="balance card-amount-2">: $20.00</span>
+                  </p>
+                  <p class="name">
+                    Contributed
+                    <span class="balance card-amount-4">: $20.00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-section-container">
+              <h1 class="sub-heading mb-4">Recent Transactions</h1>
+              <div class="flex-heading">
+                <h1 class="text-header p-0">Date</h1>
+                <h1 class="text-header">Transaction</h1>
+                <h1 class="text-header">Amount</h1>
+              </div>
+              <hr class="line mt-1" />
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name">
+                  20922 Avalon Drive (Jon Hea..)<span class="text-header"
+                    >-- Dividend</span
+                  >
+                </p>
+                <p class="number">$10.00</p>
+              </div>
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name">
+                  20922 Avalon Drive (Jon Hea..)<span class="text-header"
+                    >-- Purchase</span
+                  >
+                </p>
+                <p class="text-header">-$1000.00</p>
+              </div>
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name">
+                  Freedom Coin<span class="text-header">-- Deposit</span>
+                </p>
+                <p class="number">$10.00</p>
+              </div>
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name alignment">
+                  Freedom Coin<span class="text-header">-- Withdrawal</span>
+                </p>
+                <p class="text-header">-$500.00</p>
+              </div>
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name">
+                  Profit Wolfpack (Alpha Name)<span class="text-header"
+                    >-- Purchase</span
+                  >
+                </p>
+                <p class="text-header">-$400.00</p>
+              </div>
+              <div class="flex-line">
+                <p class="name p-0">09 Mar 2020</p>
+                <p class="name">
+                  Non Profit Wolfpack (Alpha N..)<span class="text-header"
+                    >-- Contribute</span
+                  >
+                </p>
+                <p class="text-header">-$400.00</p>
+              </div>
+              <div class="d-flex flex-row justify-content-end">
+                <a href="#" class="view-more">View More</a>
+              </div>
+            </div>
+          </div>
+          <div class="right-content-container">
+            <div class="assets-card">
+              <h1 class="sub-heading">Available Assets</h1>
+              <hr class="line" />
+              <div class="asset-elements">
+                <img
+                  alt="Covid-19"
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=141a5375-8ddc-46ee-9cc1-e99586764086&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <div class="mt-1 ml-2">
+                  <h1 class="sub-heading mb-3">
+                    Potential Covid-19 Cure: Clinical Trial
+                  </h1>
+                  <p class="text-header mb-0 p-0">Description:</p>
+                  <p class="name p-0">
+                    A well known, safe, generic medication that has been used
+                    for decades has been shown to….
+                  </p>
+                </div>
+              </div>
+              <hr class="line" />
+              <div class="asset-elements">
+                <img
+                  alt="mission"
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=09206ba6-d322-49ac-81f2-c6cb7a12c590&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <div class="mt-1 ml-2">
+                  <h1 class="sub-heading mb-3">
+                    Mission
+                    <span class="info4">
+                      <img
+                        class="ml-3"
+                        src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0abac777-79af-4221-9ed7-1c49427e165c&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                      />
+                      <span class="popup4">For Profit Feed</span>
+                    </span>
+                  </h1>
+                  <p class="text-header mb-0 p-0">Description:</p>
+                  <p class="name p-0">
+                    Ownership in Minuteman is decentralized and distributed
+                    democratically across its base of…
+                  </p>
+                </div>
+              </div>
+              <hr class="line" />
+              <div class="asset-elements">
+                <img
+                  alt="drive"
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=2de429f8-c7eb-4152-a815-c87fad4a5f98&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <div class="mt-1 ml-2">
+                  <h1 class="sub-heading mb-3">20922 Avalon Drive</h1>
+                  <p class="text-header mb-0 p-0">Address:</p>
+                  <p class="name p-0">
+                    8801 Holly Road<br />Tullahoma, TN 37388
+                  </p>
+                </div>
+              </div>
+              <hr class="line" />
+              <div class="asset-elements">
+                <img
+                  alt="drive"
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=f5a3cdef-4d06-4c86-b4af-75d2fd76366f&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <div class="mt-1 ml-2">
+                  <h1 class="sub-heading mb-3">17456 Eastgate Drive</h1>
+                  <p class="text-header mb-0 p-0">Address:</p>
+                  <p class="name p-0">
+                    23 North Briarwood Avenue<br />Williamsburg, VA 23185
+                  </p>
+                </div>
+              </div>
+              <hr class="line" />
+            </div>
+            <div class="bottom-logo-content mt-4">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=1a9d48c8-4301-4f78-a6e9-9471589172b9&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This is a mobile-layout(375 x 812) -->
+    <div class="mobile-layout">
+      <div class="top-section">
+        <img
+          src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=da2db758-f14e-4c5e-a633-fd18eb8ee854&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+          alt="logo"
+        />
+        <div class="d-flex">
+          <div class="bg-message mr-4 mt-1">
+            <img
+              width="10px"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=350ac648-9735-4cd2-9f90-c8d90ec9f2ad&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+            />
+          </div>
+          <div class="mr-4">
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=05299a1a-5151-4213-b19c-09fd876656be&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+            />
+          </div>
+          <div id="rightSideNav" class="right-sidebar">
+            <div class="d-flex flex-row justify-content-end">
+              <a href="#" onclick="closeNavRight()"
+                ><i class="fas fa-times closebtn-right pr-4 mb-5"></i
+              ></a>
+            </div>
+            <p class="name pl-5 pr-5" style="font-size: 20px">
+              <i class="far fa-user mr-4"></i>Profile
+            </p>
+            <hr class="line ml-4 mr-4" />
+            <p class="name pl-5 pr-5" style="font-size: 20px">
+              <i class="far fa-address-card mr-4"></i>Update Account
+            </p>
+            <hr class="line ml-4 mr-4" />
+            <p class="name pl-5 pr-5" style="font-size: 20px">
+              <i class="fas fa-power-off mr-4"></i>Log Out
+            </p>
+          </div>
+          <img
+            onclick="openNavRight()"
+            class="avatar"
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/profile-avatar-img.png"
+          />
+        </div>
+      </div>
+      <div class="combined-section">
+        <div class="nav-section">
+          <div id="leftSideNav" class="left-sidebar">
+            <div class="sidebar-logo mb-4">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=4d922ade-2482-445c-b61c-e09c39895d29&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Logo"
+              />
+            </div>
+            <a href="#" onclick="closeNav()"
+              ><i class="fas fa-times closebtn pl-4 mb-4"></i
+            ></a>
+            <div class="selected-element pl-4">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=2ce02936-bcca-4688-9d94-954da9671960&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Wallet"
+              />
+              <h1 class="selected-header">Wallet</h1>
+            </div>
+            <div class="element pl-5">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=1d2dee45-0510-4a6c-8867-f74e35ab51e8&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Wolfpacks"
+              />
+              <h1 class="header">Wolfpacks</h1>
+            </div>
+            <div class="element pl-5">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=30894113-f90b-49e0-af69-db2e0427e0ca&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Portfolio"
+              />
+              <h1 class="header">Portfolio</h1>
+            </div>
+            <div class="element pl-5">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=9ab06e63-4a96-4a18-9e5d-c61447892003&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Transparency"
+              />
+              <h1 class="header">Transparency</h1>
+            </div>
+            <div class="element pl-5">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=c8eb4479-89a3-4fe8-b357-3f4136b85aa1&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                alt="Properties"
+              />
+              <h1 class="header">All Properties</h1>
+            </div>
+          </div>
+          <div>
+            <img
+              onclick="openNav()"
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=b2f7b06b-fd63-49f9-a77f-d3fc8c45f8de&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              alt="dash"
+            />
+            <span class="naming ml-3">Wallet</span>
+          </div>
+          <div class="investor-box">
+            <div class="bg-icon">
+              <img
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=59134813-d05f-4a53-b2cc-0423969459de&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+            </div>
+            <p class="box-name">Investor</p>
+          </div>
+        </div>
+        <div class="scrolling-section">
+          <div class="left-section">
+            <h1 class="selected-title">Overview</h1>
+            <h1 class="title">Savings</h1>
+            <h1 class="title">Investments</h1>
+          </div>
+          <div class="d-flex pl-3">
+            <div>
+              <hr class="selected-line" />
+            </div>
+            <div>
+              <hr class="line" />
+            </div>
+          </div>
+          <div class="flex-header pl-3 pr-3">
+            <p class="balance">
+              Total Balance
+              <span class="info1">
+                <img
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0829ac6e-c219-4b8b-ab8f-46690c34657d&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <span class="popup1"
+                  >Total Balance, It includes overall balance like freedom coin,
+                  property investment & wolfpack investment</span
+                >
+              </span>
+              <span class="balance amount">: <br />$60.00</span>
+            </p>
+            <p class="balance">
+              Wallet Address<br />
+              <span id="imgPopUp" class="popup-img">
+                <img
+                  src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=3154634a-8c43-46e1-bb0d-c5a9244742f9&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                />
+                <span id="qrCodeCard" class="qrcode-popup"
+                  ><i class="fas fa-qrcode" style="font-size: 80px"></i><br />qr
+                  code</span
+                >
+              </span>
+            </p>
+          </div>
+          <div class="cards-container">
+            <div class="card ml-auto mr-auto">
+              <h1 class="card-title">Checking</h1>
+              <p class="name">
+                Cash<span class="balance card-amount">: $20.00</span>
+              </p>
+              <h1 class="text-header">
+                Buy Coins<span class="top-span">TM</span>
+              </h1>
+              <div class="d-flex flex-row">
+                <div id="coinBox3" class="coins-box p-3">
+                  <p id="coinNum3" class="coins-num">0</p>
+                  <div class="d-flex flex-column">
+                    <i class="fas fa-angle-up angle-icon"></i>
+                    <i class="fas fa-angle-down angle-icon"></i>
+                  </div>
+                </div>
+                <button class="button">
+                  Buy<span class="popup3">Read FAQs</span>
+                </button>
+              </div>
+            </div>
+            <div class="card ml-auto mr-auto">
+              <h1 class="card-title">Savings</h1>
+              <p class="name">
+                Invested<span class="balance card-amount-2">: $20.00</span>
+              </p>
+              <p class="name">
+                Total Payout
+                <span class="info2">
+                  <img
+                    src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0829ac6e-c219-4b8b-ab8f-46690c34657d&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                  />
+                  <span class="popup2"
+                    >Projected total payments based on term and APR</span
+                  >
+                </span>
+                <span class="balance card-amount-3">: $27.00</span>
+              </p>
+            </div>
+            <div class="card ml-auto mr-auto">
+              <h1 class="card-title">Transfers</h1>
+              <p class="name">
+                Paypal<span class="balance card-amount">Bank Account</span>
+              </p>
+              <h1 class="text-header">
+                Sell Coins<span class="top-span">TM</span>
+              </h1>
+              <div class="d-flex flex-row">
+                <div id="coinBox4" class="coins-box p-3">
+                  <p id="coinNum4" class="coins-num">0</p>
+                  <div class="d-flex flex-column">
+                    <i class="fas fa-angle-up angle-icon"></i>
+                    <i class="fas fa-angle-down angle-icon"></i>
+                  </div>
+                </div>
+                <button class="button">
+                  Sell<span class="popup3">Read FAQs</span>
+                </button>
+              </div>
+            </div>
+            <div class="card ml-auto mr-auto">
+              <h1 class="card-title">Investments</h1>
+              <p class="name">
+                Invested<span class="balance card-amount-2">: $20.00</span>
+              </p>
+              <p class="name">
+                Contributed
+                <span class="balance card-amount-4">: $20.00</span>
+              </p>
+            </div>
+          </div>
+          <div class="assets-section text-center">
+            <h1 class="sub-heading" style="font-weight: bold">
+              Available Assets
+            </h1>
+            <div class="pl-3 pr-3">
+              <img
+                alt="Covid-19"
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=141a5375-8ddc-46ee-9cc1-e99586764086&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+              <h1 class="sub-heading mt-2 mb-3">
+                Potential Covid-19 Cure: Clinical Trial
+              </h1>
+              <p class="text-header mb-1 p-0">Description:</p>
+              <p class="name p-0">
+                A well known, safe, generic medication that has been used for
+                decades has been shown to….
+              </p>
+            </div>
+            <hr class="line" />
+            <div class="pl-3 pr-3">
+              <img
+                alt="mission"
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=09206ba6-d322-49ac-81f2-c6cb7a12c590&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+              <h1 class="sub-heading mt-2 mb-3">
+                Mission
+                <span class="info4">
+                  <img
+                    class="ml-3"
+                    src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=0abac777-79af-4221-9ed7-1c49427e165c&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+                  />
+                  <span class="popup4">For Profit Feed</span>
+                </span>
+              </h1>
+              <p class="text-header mb-1 p-0">Description:</p>
+              <p class="name p-0">
+                Ownership in Minuteman is decentralized and distributed
+                democratically across its base of…
+              </p>
+            </div>
+            <hr class="line" />
+            <div class="pl-3 pr-3">
+              <img
+                alt="drive"
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=2de429f8-c7eb-4152-a815-c87fad4a5f98&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+              <h1 class="sub-heading mt-2 mb-3">20922 Avalon Drive</h1>
+              <p class="text-header mb-1 p-0">Address:</p>
+              <p class="name p-0">8801 Holly Road<br />Tullahoma, TN 37388</p>
+            </div>
+            <hr class="line" />
+            <div class="pl-3 pr-3">
+              <img
+                alt="drive"
+                src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=f5a3cdef-4d06-4c86-b4af-75d2fd76366f&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+              />
+              <h1 class="sub-heading mt-2 mb-3">17456 Eastgate Drive</h1>
+              <p class="text-header mb-1 p-0">Address:</p>
+              <p class="name p-0">
+                23 North Briarwood Avenue<br />Williamsburg, VA 23185
+              </p>
+            </div>
+            <hr class="line" />
+          </div>
+          <div class="transactions-section p-2">
+            <h1 class="sub-heading ml-2 mb-4">Recent Transactions</h1>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">Transaction</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Amount</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: 20922 Avalon Drive (Jon Hea..)</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: $10</p>
+              </div>
+            </div>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">From</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Freedom Coins</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: Robert D.</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: 100</p>
+              </div>
+            </div>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">From</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Freedom Coins</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: Robert D.</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: 100</p>
+              </div>
+            </div>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">From</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Freedom Coins</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: Robert D.</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: 100</p>
+              </div>
+            </div>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">From</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Freedom Coins</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: Robert D.</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: 100</p>
+              </div>
+            </div>
+            <div class="transaction-card pl-2">
+              <div class="left-description">
+                <p class="text-header">Date</p>
+                <p class="text-header">From</p>
+                <p class="text-white">a</p>
+                <p class="text-header">Freedom Coins</p>
+              </div>
+              <div class="right-description">
+                <p class="name">: 09 Mar, 2020</p>
+                <p class="name">: Robert D.</p>
+                <p class="text-header ml-2">-- Dividend</p>
+                <p class="number">: 100</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-most-section pl-3 pr-3">
+            <p class="sub-heading">View More</p>
+            <img
+              src="https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:0b253f3a-0e0b-495d-8074-fc5424089a10;revision=0?component_id=1a9d48c8-4301-4f78-a6e9-9471589172b9&amp;api_key=CometServer1&amp;access_token=1618682237_urn%3Aaaid%3Asc%3AUS%3A0b253f3a-0e0b-495d-8074-fc5424089a10%3Bpublic_89dcbe669dc0ef710ade08d5fcb80a8d30955324"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
